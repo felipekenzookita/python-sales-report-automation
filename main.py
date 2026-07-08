@@ -27,7 +27,7 @@ print(ticket_medio)
 import win32com.client as win32
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
-mail.To = 'felipetesteestudos@gmail.com'
+mail.To = input("Digite o e-mail do destinatário: ")
 mail.Subject = 'Relatório de Vendas por Loja'
 mail.HTMLBody = f'''
 <p>Prezados,<p>
